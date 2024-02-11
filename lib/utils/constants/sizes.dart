@@ -68,4 +68,9 @@ class SSizes{
 
   //Grid View spacing
   static const double gridViewSpacing = 16;
+
+  //Login Logo Size
+  static const double loginLogoHeight = 144;
+  static const double loginLogoWidth = 350;
+
 }

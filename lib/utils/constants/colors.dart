@@ -38,7 +38,7 @@ class SColors{
   static const Color buttonDisabled = Color(0xff8ca5a7);
 
   //Border Colors
-  static const Color bordarPrimary = Color(0xFFf2f9f9);
+  static const Color borderPrimary = Color(0xFFf2f9f9);
   static const Color borderSecondary = Color(0xFFddeff0);
 
   //Error and Validation Colors

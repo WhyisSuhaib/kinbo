@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kinbo/utils/constants/colors.dart';
 
 class SElevatedButtonTheme{
   SElevatedButtonTheme._();     //To avoid Creating Instances
@@ -11,7 +12,7 @@ class SElevatedButtonTheme{
       backgroundColor: Colors.blue,
       disabledForegroundColor: Colors.grey,
       disabledBackgroundColor: Colors.grey,
-      side: const BorderSide(color: Colors.blue),
+      side: const BorderSide(color: SColors.darkerGrey),
       padding: const EdgeInsets.symmetric(vertical: 18),
       textStyle: const TextStyle(fontSize: 16, color: Colors.white,
           fontWeight: FontWeight.w600),
@@ -27,7 +28,7 @@ class SElevatedButtonTheme{
       backgroundColor: Colors.blue,
       disabledForegroundColor: Colors.grey,
       disabledBackgroundColor: Colors.grey,
-      side: const BorderSide(color: Colors.blue),
+      side: const BorderSide(color: SColors.darkerGrey),
       padding: const EdgeInsets.symmetric(vertical: 18),
       textStyle: const TextStyle(fontSize: 16, color: Colors.white,
           fontWeight: FontWeight.w600),
