@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class SColors{
+class SColors {
   SColors._();
 
   //App Basic Colors
@@ -10,13 +10,12 @@ class SColors{
 
   //Gradient Colors
   static const Gradient linearGradient = LinearGradient(
-      begin: Alignment(0.0, 0.0),
+      begin: Alignment(0.0, 0.5),
       end: Alignment(0.707, -0.707),
       colors: [
-    Color(0xff356169),
-    Color(0xff438e96),
-    Color(0xff92cace),
-  ]);
+        Color(0xFF3b757f),
+        Color(0xff73acb0),
+      ]);
 
   //Text Colors
   static const Color textPrimary = Color(0xFF333333);
@@ -53,7 +52,6 @@ class SColors{
   static const Color darkGrey = Color(0xff909090);
   static const Color grey = Color(0xffd5d5d5);
   static const Color softGrey = Color(0xffe1e3e2);
-  static const Color lightGrey =Color(0xffdcdfde);
-  static const Color white =Color(0xffffffff);
-
+  static const Color lightGrey = Color(0xffdcdfde);
+  static const Color white = Color(0xffffffff);
 }
