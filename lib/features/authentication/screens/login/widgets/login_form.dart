@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-
+import 'package:kinbo/features/authentication/screens/signup/signup.dart';
+import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
+import '../../password_configuration/forget_password.dart';
 
 class SLoginForm extends StatelessWidget {
   const SLoginForm({
@@ -13,8 +16,7 @@ class SLoginForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
       child: Padding(
-        padding: const EdgeInsets.symmetric(
-            vertical: SSizes.spaceBtwSections),
+        padding: const EdgeInsets.symmetric(vertical: SSizes.spaceBtwSections),
         child: Column(
           children: [
             ///Email
@@ -49,7 +51,7 @@ class SLoginForm extends StatelessWidget {
 
                 ///Forget Password
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => const ForgetPassword()),
                     child: const Text(STexts.forgetPass)),
               ],
             ),
@@ -61,8 +63,11 @@ class SLoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {}, child: const Text(STexts
-                    .signIn))),
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: SColors.primary),
+                  child: const Text(STexts.signIn),
+                )),
             const SizedBox(
               height: SSizes.spaceBtwItems,
             ),
@@ -71,8 +76,8 @@ class SLoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: OutlinedButton(
-                    onPressed: () {}, child: const Text(STexts
-                    .createAcc))),
+                    onPressed: () => Get.to(const SignupScreen()),
+                    child: const Text(STexts.createAcc))),
           ],
         ),
       ),

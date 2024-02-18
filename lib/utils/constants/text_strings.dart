@@ -40,6 +40,7 @@ class STexts{
   static const String verfy = "Verifications";
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend Email In";
+  static const String done = "Done";
 
   //Authentication Heading text
   static const String loginTitle = "Welcome Back,";
@@ -59,6 +60,7 @@ class STexts{
   static const String yourAccCreateTitle = "Your Account Successfully Created";
   static const String yourAccCreateSub = "Welcome to your Ultimate shopping "
       "Destination: Your Account is Created";
+  static const String and = "and";
 
 
 
